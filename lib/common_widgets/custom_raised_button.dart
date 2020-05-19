@@ -25,7 +25,7 @@ class CustomRaisedButton extends StatelessWidget {
             Radius.circular(4.0),
           ),
         ),
-        onPressed: () {},
+        onPressed: onPressed,
       ),
     );
   }
