@@ -1,4 +1,5 @@
-import 'package:TimeTracker/app/sign_in/sign_in_page.dart';
+import 'package:TimeTracker/app/landing_page.dart';
+import 'package:TimeTracker/services/auth.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -11,7 +12,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: SignInPage(),
+      home: LandingPage(
+        auth: Auth(), //passing instance because AuthBase is an abstract class
+      ),
     );
   }
 }
