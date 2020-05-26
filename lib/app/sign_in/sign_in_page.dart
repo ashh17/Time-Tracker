@@ -108,6 +108,9 @@ class SignInPage extends StatelessWidget {
               fontSize: 14.0,
             ),
           ),
+          SizedBox(
+            height: 8.0,
+          ),
           SignInButton(
             text: 'Go anonymous',
             textColor: Colors.black,
